@@ -1,0 +1,25 @@
+# Core translation (MarianMT models for Hindi/Urdu → English)
+transformers>=4.48.0
+sentencepiece>=0.2.1
+
+# Deep learning backend
+torch>=2.6.0
+
+# Topic modeling
+gensim>=4.3.2
+
+# NLP utilities — pin to 3.9.3 for Zip Slip fix (CVE)
+# Note: nltk.app.wordnet_app is NOT used in this project
+nltk>=3.9.3
+
+# Rhyme and syllable analysis
+pronouncing>=0.2.0
+
+# Language detection
+langdetect>=1.0.9
+
+# Translation quality evaluation
+sacrebleu>=2.4.0
+
+# Testing
+pytest>=7.4.0
