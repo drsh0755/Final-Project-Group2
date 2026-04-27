@@ -1,0 +1,59 @@
+
+============================================================
+  TRAIN SPLIT (100K sample)
+============================================================
+  Rows:                100,000
+  Hindi avg tokens:    17.0  (std 12.0)
+  English avg tokens:  16.2  (std 11.5)
+  Hindi avg chars:     89.1
+  English avg chars:   94.2
+
+  Sample rows (train):
+    HI: क्यों हम अभी समझ नहीं कम से कम व्यवहार्य उत्पाद का निर्माण करने के लिए कैसे?
+    EN: Why don 't we just figure out how to build the minimum viable product?
+
+    HI: बाद में, वह पचीस रुपये के मासिक वेतन पर महाफिज रिकार्ड कीपर नियुक्त हुए और इस पद
+    EN: Subsequently, he was appointed a Revenue Mahafez Record Keeper at Rs. 25 / - per
+
+    HI: सजावटी भित्तिस्तंभ के मॉटिफ, जो मूलभूत रूप से मंदिर मॉटिफ, प्रायः नासिकाग्र से, 
+    EN: The decorative pilaster motif, which is essentially a pilaster carrying a shrine
+
+
+============================================================
+  VALIDATION SPLIT
+============================================================
+  Rows:                520
+  Hindi avg tokens:    17.9  (std 8.8)
+  English avg tokens:  17.7  (std 8.6)
+  Hindi avg chars:     90.8
+  English avg chars:   105.0
+
+  Sample rows (val):
+    HI: पटेल सबके हैं, समूचे भारत के प्रिय हैं, लेकिन कांग्रेस उन्हें सिर्फ अपनी संपदा म
+    EN: Patel belongs to everyone, he is loved by the whole of India, but Congress has m
+
+    HI: प्रमुख पंसस की बैठक मनमाने ढंग से करते हैं।
+    EN: The chief of the PSS organises meetings arbitrarily.
+
+    HI: नगरसेवक रीता मुले ने सदिच्छा भेंट दी।
+    EN: Nagarsevak, Reeta Mule presented messages from well-wishers.
+
+
+============================================================
+  TEST SPLIT
+============================================================
+  Rows:                2,505
+  Hindi avg tokens:    22.7  (std 11.3)
+  English avg tokens:  19.7  (std 9.5)
+  Hindi avg chars:     117.2
+  English avg chars:   117.6
+
+  Sample rows (test):
+    HI: एजेंट लोगों को ज्यादा मुनाफे का लालच देकर इस कंपनी से जुड़ने की सलाह देते थे।
+    EN: The agents lured people to join the company with promises of very good returns.
+
+    HI: इसका मतलब है यही कारण है कि लाइन में अगले व्यक्ति को एक समान बैग के लिए 100 डॉलर
+    EN: That means one passenger in line at a Frontier gate might get to bring a bag on 
+
+    HI: चादवीर ने कहा कि मुख्यमंत्री ने प्रदेश में ऐतिहासिक निर्णयों एवं जनहित कार्यो की
+    EN: Chadvir said that, based on the popularity gained by the Chief Minister by the w
