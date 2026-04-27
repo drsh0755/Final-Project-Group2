@@ -1,0 +1,10 @@
+{
+  "model": "Tier3_v3a_Interleaved",
+  "strategy": "hi\u2192en_anthropic + hi\u2192en_mistral interleaved",
+  "train_pairs": 29114,
+  "best_eval_bleu": 31.07,
+  "avg_bleu_vs_literal": 7.79,
+  "avg_bleu_vs_style": 7.02,
+  "avg_tgt_rhyme_density": 0.428,
+  "avg_syllable_alignment": 0.485
+}

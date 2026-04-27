@@ -1,0 +1,18 @@
+======================================================================
+MODEL COMPARISON TABLE
+DATS 6312 Final Project — Style-Preserving Hindi/Urdu Translation
+======================================================================
+
+Metric                      Tier1_RuleBased_v1    Tier1_RuleBased_v2    Tier2_Seq2Seq_v1      Tier2_Seq2Seq_v2      Tier3_OpusMT_v1       Tier3_OpusMT_v2       Tier3_OpusMT_v3a      Tier3_OpusMT_v3b      
+----------------------------------------------------------------------
+BLEU vs Literal             0.35                  0.92                  2.19                  2.84                  9.05                  8.94                  7.9                   7.77                  
+BLEU vs Style               0.29                  0.73                  3.52                  2.12                  6.69                  6.84                  7.07                  6.69                  
+Rhyme Density (tgt)         0.6                   0.616                 0.701                 0.651                 0.27                  0.252                 0.311                 0.284                 
+Syllable Alignment          0.144                 0.469                 0.388                 0.327                 0.503                 0.52                  0.494                 0.455                 
+
+======================================================================
+Notes:
+  BLEU vs Literal : compared against deep-translator output (en_t)
+  BLEU vs Style   : compared against Claude style-preserving translation (en_anthropic)
+  Rhyme Density   : fraction of output lines sharing end rhyme
+  Syllable Align  : Devanagari syllable count vs English syllable count per line

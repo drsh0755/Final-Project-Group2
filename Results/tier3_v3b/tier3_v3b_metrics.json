@@ -1,0 +1,10 @@
+{
+  "model": "Tier3_v3b_Curriculum",
+  "strategy": "Phase A: en_anthropic \u2192 Phase B: en_mistral",
+  "phase_a_best_bleu": 25.1,
+  "phase_b_best_bleu": 26.97,
+  "avg_bleu_vs_literal": 7.63,
+  "avg_bleu_vs_style": 6.6,
+  "avg_tgt_rhyme_density": 0.405,
+  "avg_syllable_alignment": 0.444
+}
