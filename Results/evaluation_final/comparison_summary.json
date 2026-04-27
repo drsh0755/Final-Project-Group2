@@ -1,0 +1,74 @@
+[
+  {
+    "tier": "Tier1_RuleBased_v1",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 0.35,
+    "avg_bleu_vs_style": 0.29,
+    "avg_src_rhyme_density": 0.627,
+    "avg_tgt_rhyme_density": 0.6,
+    "avg_syllable_alignment": 0.144
+  },
+  {
+    "tier": "Tier1_RuleBased_v2",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 0.92,
+    "avg_bleu_vs_style": 0.73,
+    "avg_src_rhyme_density": 0.627,
+    "avg_tgt_rhyme_density": 0.616,
+    "avg_syllable_alignment": 0.469
+  },
+  {
+    "tier": "Tier2_Seq2Seq_v1",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 2.19,
+    "avg_bleu_vs_style": 3.52,
+    "avg_src_rhyme_density": 0.627,
+    "avg_tgt_rhyme_density": 0.701,
+    "avg_syllable_alignment": 0.388
+  },
+  {
+    "tier": "Tier2_Seq2Seq_v2",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 2.84,
+    "avg_bleu_vs_style": 2.12,
+    "avg_src_rhyme_density": 0.627,
+    "avg_tgt_rhyme_density": 0.651,
+    "avg_syllable_alignment": 0.327
+  },
+  {
+    "tier": "Tier3_OpusMT_v1",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 9.05,
+    "avg_bleu_vs_style": 6.69,
+    "avg_src_rhyme_density": 0.627,
+    "avg_tgt_rhyme_density": 0.27,
+    "avg_syllable_alignment": 0.503
+  },
+  {
+    "tier": "Tier3_OpusMT_v2",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 8.94,
+    "avg_bleu_vs_style": 6.84,
+    "avg_src_rhyme_density": 0.627,
+    "avg_tgt_rhyme_density": 0.252,
+    "avg_syllable_alignment": 0.52
+  },
+  {
+    "tier": "Tier3_OpusMT_v3a",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 7.9,
+    "avg_bleu_vs_style": 7.07,
+    "avg_src_rhyme_density": 0.627,
+    "avg_tgt_rhyme_density": 0.311,
+    "avg_syllable_alignment": 0.494
+  },
+  {
+    "tier": "Tier3_OpusMT_v3b",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 7.77,
+    "avg_bleu_vs_style": 6.69,
+    "avg_src_rhyme_density": 0.627,
+    "avg_tgt_rhyme_density": 0.284,
+    "avg_syllable_alignment": 0.455
+  }
+]
