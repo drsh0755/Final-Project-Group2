@@ -1,0 +1,21 @@
+{
+  "model": "Tier3_OpusMT_v2_Improved",
+  "base_model": "Helsinki-NLP/opus-mt-hi-en",
+  "version": "v2",
+  "num_poems": 100,
+  "best_phase2_bleu": 25.1,
+  "avg_bleu_vs_literal": 9.01,
+  "avg_bleu_vs_style": 6.58,
+  "avg_src_rhyme_density": 0.627,
+  "avg_tgt_rhyme_density": 0.338,
+  "avg_syllable_alignment": 0.507,
+  "improvements": {
+    "skip_phase1": true,
+    "lr": 5e-06,
+    "weight_decay": 0.05,
+    "batch_size": 16,
+    "no_repeat_ngram_size": 2,
+    "rhyme_booster": true,
+    "patience": 5
+  }
+}

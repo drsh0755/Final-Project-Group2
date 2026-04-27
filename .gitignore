@@ -1,17 +1,38 @@
+# Large data files
 *.csv
 *.pt
 *.pth
 *.bin
 *.pkl
+*.safetensors
+
+# Data directories
 Data/raw/
+Data/processed/poetry_data_translated.json
+Data/processed/poetry_complete.json
+
+# Model checkpoints (weights stored on AWS)
+Models/tier3_opusmt/phase1/
+Models/tier3_opusmt/phase2_v2/
+Models/tier3_opusmt/tier3_v1_phase2_checkpoints/
+Models/tier3_opusmt/phase_v3b_a/
+Models/tier3_opusmt/phase_v3b_b/
+Models/tier3_opusmt/phase2_v3a/
+
+# Results raw data
 Results/models/
 test_results/
+
+# Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-.DS_Store
-*.log
+
+# Environment
+nlp_env/
 venv/
 .env
 
-# IIT Bombay corpus exceptions
+# OS
+.DS_Store
+*.log

@@ -1,0 +1,736 @@
+======================================================================
+TIER 3 — OPUS-MT FINE-TUNED — REPORT
+======================================================================
+
+model: Tier3_OpusMT_FineTuned
+base_model: Helsinki-NLP/opus-mt-hi-en
+num_poems: 100
+avg_bleu_vs_literal: 8.39
+avg_bleu_vs_style: 6.1
+avg_src_rhyme_density: 0.627
+avg_tgt_rhyme_density: 0.257
+avg_syllable_alignment: 0.0
+hyperparams: {'phase1_epochs': 3, 'phase1_lr': 5e-05, 'phase2_epochs': 15, 'phase2_lr': 2e-05, 'max_len': 128, 'p1_sample': 50000}
+
+----------------------------------------------------------------------
+
+[0] ahmad-faraz
+SOURCE:
+अजब जुनून-ए-मसाफ़त में घर से निकला था
+ख़बर नहीं है कि सूरज किधर से निकला था
+ये कौन फिर से उन्हीं रास्तों में छोड़ गया
+अभी अभी तो अज़ाब-ए-सफ़र से निकला था
+ये तीर दिल में मगर बे-सबब नहीं उतरा
+कोई तो हर्फ़ लब-ए-चारागर से निकला था
+ये अब जो आग बना शहर शहर फैला है
+यही धुआँ मिरे दीवार-ओ-दर से निकला था
+मैं रात टूट के रोया तो चैन से सोया
+कि दिल का ज़हर मिरी चश्म-ए-तर से निकला था
+ये अब जो सर हैं ख़मीदा कुलाह की ख़ातिर
+ये ऐब भी तो हम अहल-ए-हुनर से निकला था
+वो क़ैस अब जिसे मजनूँ पुकारते हैं 'फ़राज़'
+तिरी तरह कोई दीवाना घर से निकला था
+
+REF LITERAL:
+Had left the house in a strange passion
+I don't know where the sun came from
+Who left him on the same roads again?
+I had just come out of a journey of torture.
+This arrow did not land in the heart but without any reason
+Someone had come out of the pasture.
+Now this fire has spread from city to city.
+This was the smoke that came out of the wall.
+I cried late in the night and slept peacefully
+That the poison of the heart had come out of Miri Chashma-e-tar
+This sir who is now is for the sake of Khameeda Kulah.
+This problem also came from our Ahl-e-Hunar.
+Now what is that person whom Majnu calls 'Faraaz'?
+Some crazy person had come out of the house just like that.
+
+REF STYLE:
+In strange obsession with distance I left my home that day
+I know not from which direction the sun had made its way
+Who left me once again upon those very roads to stray
+When I had just emerged from travel's torment and dismay
+This arrow pierced my heart, but not without a cause I'd say
+Some word from the healer's lips had found its way
+This fire that now spreads from city to city in array
+Was smoke that from my walls and doors had made its way
+I wept through broken night and then in peace I lay
+For poison of my heart through tearful eyes had made its way
+These heads now bowed in search of crowns to hold and display
+This flaw too from us people of art had made its way
+That Qais whom they now call Majnun, 'Faraz', I must say
+Like you, a madman from his home had made his way
+
+HYPOTHESIS:
+Perhaps in love's passion it came out of my home
+It doesn't know where the sun came from
+Who has left this once again in their own paths?
+I had just emerged from the torment of the beloved's face
+This arrow in the heart did not fall without reason
+Someone came out of every tongue's lips
+Now this city that makes fire a fire spread
+This smoke came from my wall's wall
+When I broke the night's tears, I slept in peace
+That the heart's poison had emerged from my heart'
+Now this is my head, for the sake of the pure prayer
+This ill-fate too, we came out of my life's way
+Those who now call upon 'Dafaraz'
+Like a tale, someone came out of the house with madness
+
+BLEU literal: 15.41  BLEU style: 5.26  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[1] ahmad-faraz
+SOURCE:
+हवा के ज़ोर से पिंदार-ए-बाम-ओ-दर भी गया
+चराग़ को जो बचाते थे उन का घर भी गया
+पुकारते रहे महफ़ूज़ कश्तियों वाले
+मैं डूबता हुआ दरिया के पार उतर भी गया
+अब एहतियात की दीवार क्या उठाते हो
+जो चोर दिल में छुपा था वो काम कर भी गया
+मैं चुप रहा कि इसी में थी आफ़ियत जाँ की
+कोई तो मेरी तरह था जो दार पर भी गया
+सुलगते सोचते वीरान मौसमों की तरह
+कड़ा था अहद-ए-जवानी मगर गुज़र भी गया
+जिसे भुला न सका उस को याद क्या रखता
+जो नाम लब पे रहा ज़ेहन से उतर भी गया
+फटी फटी हुई आँखों से यूँ न देख मुझे
+तुझे तलाश है जिस शख़्स की वो मर भी गया
+मगर फ़लक को अदावत उसी के घर से थी
+जहाँ 'फ़राज़' न था सैल-ए-ग़म उधर भी गया
+
+REF LITERAL:
+Pindar-e-Bam-o-Dar also went away due to the force of the wind.
+The house of those who saved Charag was also lost.
+The people in the safe boats kept calling
+I drowned and crossed the river
+Why do you raise the wall of precaution now?
+The thief who was hidden in the heart also did his job.
+I remained silent because I felt comfortable in this.
+There was someone like me who also went to the door
+Like burning and thinking desolate seasons
+The promise of youth was strict but it also passed.
+Who can remember the one who could not forget?
+The name that was on my mind has also disappeared from my mind.
+Don't look at me like this with tearful eyes
+You are looking for the person who also died.
+But Falak had enmity towards his own house.
+Where Faraz was not, the soul of sorrow went there too.
+
+REF STYLE:
+The wind's fierce force swept away the pride of roof and door
+Those who tried to save the lamp, their home was lost for sure
+The ones in safety's boats kept calling out to me
+But drowning, I crossed over to the river's distant shore
+Why raise the wall of caution's guard at this late hour
+The thief that hid within the heart has done its work before
+I stayed silent, for in that lay my soul's peace
+Someone like me there was who went to the gallows' floor
+Like smoldering, brooding, desolate seasons passing by
+Hard was the covenant of youth, yet it passed through time's door
+Why should I remember one I could not forget
+The name that stayed upon my lips slipped from my mind's core
+Don't look at me with those torn and tattered eyes
+The person that you seek has died, exists no more
+But heaven's enmity was with that very house alone
+Where 'Faraz' was not, grief's flood went there to pour
+
+HYPOTHESIS:
+By force of the wind, I went to the heart of the beloved's beloved
+Those who saved the lamp's home too went away
+They kept calling upon the boat's shores
+I was drowned beyond the river's flow, I passed away
+Now what do you lift up the wall of guard?
+The thief who hid in the heart went to work
+I kept silent, that in this very way, the world's way
+Someone was like me, who came to love, but
+Think of it as barren season's way
+It was hard to keep the promise of youth, but it passed away
+Who couldn't forget, what would he remember?
+The name that remained on the lips, even the name came down from the lamp's door
+Don't gaze at me with your eyes, I cannot see
+You are searching for the person whose fate he died too
+But his hatred for the beloved was from his own home's door
+Where there was no separation, there went even beyond the cup's door
+
+BLEU literal: 9.49  BLEU style: 4.51  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[2] ahmad-faraz
+SOURCE:
+इस से पहले कि बे-वफ़ा हो जाएँ
+क्यूँ न ऐ दोस्त हम जुदा हो जाएँ
+तू भी हीरे से बन गया पत्थर
+हम भी कल जाने क्या से क्या हो जाएँ
+तू कि यकता था बे-शुमार हुआ
+हम भी टूटें तो जा-ब-जा हो जाएँ
+हम भी मजबूरियों का उज़्र करें
+फिर कहीं और मुब्तला हो जाएँ
+हम अगर मंज़िलें न बन पाए
+मंज़िलों तक का रास्ता हो जाएँ
+देर से सोच में हैं परवाने
+राख हो जाएँ या हवा हो जाएँ
+इश्क़ भी खेल है नसीबों का
+ख़ाक हो जाएँ कीमिया हो जाएँ
+अब के गर तू मिले तो हम तुझ से
+ऐसे लिपटें तिरी क़बा हो जाएँ
+बंदगी हम ने छोड़ दी है 'फ़राज़'
+क्या करें लोग जब ख़ुदा हो जाएँ
+
+REF LITERAL:
+before you become disloyal
+Why don't we part, my friend?
+you too turned from diamond to stone
+Who knows what will happen to us tomorrow
+your talent went beyond count
+If we too break then we will be destroyed
+let us also excuse our compulsions
+then get stuck somewhere else
+If we don't reach our destination
+be the path to your destination
+moths are late in thinking
+turn to ashes or turn to wind
+Love is also a game of luck
+turn into ashes turn into alchemy
+Now if we meet you then we will meet you
+embrace me like this
+We have given up worship 'Faraaz'
+What do people do when they become God?
+
+REF STYLE:
+Before you turn unfaithful and betray
+Why not, my friend, we part and go our way
+You too from diamond turned to stone one day
+Tomorrow who knows what we might become, pray
+You who were unique, now countless in array
+If we should break, we'd scatter where we may
+We too will plead our helplessness and say
+Then somewhere else get trapped in love's foray
+If we cannot become destinations, nay
+Let us become the path that leads the way
+The moths have pondered long in disarray
+Should they turn to ash or wind and fade away
+Love too is but a game that fortunes play
+Turn to dust or become alchemy's display
+If next we meet, then we shall not delay
+We'll cling so close, become your robe's array
+I've abandoned worship now, O Faraz, I say
+What can one do when people become gods today
+
+HYPOTHESIS:
+Before we become unfaithful, before we become loyal
+Why not, O friend, let us separate ourselves
+You too became a diamond's stone
+We too go tomorrow, what should happen to us
+You were the only one, I've become a lot more
+If we too break through, let us become the world's target
+Let us also make excuses for those who are forced
+Then let there be another place where there's no trace
+If we couldn't attain the destinations
+Let the path to destinations become a way
+We're in a moment's thought, but it's true
+Go to ashes or become air
+Love too is a game of fortune's art
+Let the dust become dust's condition
+If you meet now, then we'll meet with you
+Let such tresses become the grave's face
+We've abandoned 'Nisz', we've left
+What can people do when they become God
+
+BLEU literal: 9.28  BLEU style: 4.38  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[3] ahmad-faraz
+SOURCE:
+जिस सम्त भी देखूँ नज़र आता है कि तुम हो
+ऐ जान-ए-जहाँ ये कोई तुम सा है कि तुम हो
+ये ख़्वाब है ख़ुशबू है कि झोंका है कि पल है
+ये धुँद है बादल है कि साया है कि तुम हो
+इस दीद की साअत में कई रंग हैं लर्ज़ां
+मैं हूँ कि कोई और है दुनिया है कि तुम हो
+देखो ये किसी और की आँखें हैं कि मेरी
+देखूँ ये किसी और का चेहरा है कि तुम हो
+ये उम्र-ए-गुरेज़ाँ कहीं ठहरे तो ये जानूँ
+हर साँस में मुझ को यही लगता है कि तुम हो
+हर बज़्म में मौज़ू-ए-सुख़न दिल-ज़दगाँ का
+अब कौन है शीरीं है कि लैला है कि तुम हो
+इक दर्द का फैला हुआ सहरा है कि मैं हूँ
+इक मौज में आया हुआ दरिया है कि तुम हो
+वो वक़्त न आए कि दिल-ए-ज़ार भी सोचे
+इस शहर में तन्हा कोई हम सा है कि तुम हो
+आबाद हम आशुफ़्ता-सरों से नहीं मक़्तल
+ये रस्म अभी शहर में ज़िंदा है कि तुम हो
+ऐ जान-ए-'फ़राज़' इतनी भी तौफ़ीक़ किसे थी
+हम को ग़म-ए-हस्ती भी गवारा है कि तुम हो
+
+REF LITERAL:
+Wherever I look, I see that you are there.
+Oh my dear, there is someone like you that you are there.
+This is a dream, a fragrance, a gust, or a moment.
+Is this a fog, a cloud or a shadow or is it you?
+There are many colors in this sister's voice.
+I am that there is someone else, the world is that you are
+Look, these are someone else's eyes or mine
+Let me see, it's someone else's face that it's you
+I would like to know if this old man stays somewhere.
+With every breath I feel you are there
+There is happiness in every joy of the heart and soul.
+Now who is Shireen or Laila or you?
+There is a spreading support of pain that I am.
+It's a river full of joy that you are there.
+The time will not come when even the heart will think about it.
+There is no one like you alone in this city
+Aabad, we are not killed by evil heads.
+This ritual is still alive in the city that you are
+Oh dear Faraz, who had such a privilege?
+We are also saddened by the fact that you are
+
+REF STYLE:
+Whichever way I look, it seems that you are there
+O life of the world, is this someone like you or you?
+Is this a dream, a fragrance, a breeze, or a moment's flow
+Is this mist, a cloud, a shadow, or is it you?
+In this moment of vision, many hues tremble and glow
+Am I here, is someone else, is the world, or is it you?
+Look, are these someone else's eyes or are they mine
+I wonder, is this someone else's face or is it you?
+If this fleeting age would pause, then I would know
+With every breath it feels to me that it is you
+In every gathering, the theme of talk for hearts that pine
+Now who is Shirin, who is Laila, or is it you?
+A desert spread with pain is what I am, I know
+A river risen in a wave is what is you
+May that time never come when even my wounded heart would find
+In this city someone lonely like us or is it you?
+Not from the crazed do we populate the killing fields below
+This custom still lives in the city, or is it you?
+O life of 'Faraz', who had the fortune so divine
+Even the sorrow of existence I can bear because of you
+
+HYPOTHESIS:
+Whatever state you see, it appears that you are
+O life, where is this one like you, that you are
+This dream is sweet, it's that the breeze is that moment
+This smoke is a cloud that is a shadow that you are
+There are many colors in this display of love's way
+I am that there's another world that you are
+Behold, these are the eyes of someone else, that I am
+Let's see this face of another, that you are
+If this age of separation remained, then this life would be life's purpose
+In every breath I feel that you are
+In every moment the heart of love's heart
+Now who is it, that Lala is it that you are
+There's a pain spreading, that I am
+There came a wave, the river, that you are
+That time did not come for even the heart's thought
+In this city, there's a single one, that you are
+We live, we are not bound by the tresses of love's door
+This custom still exists in the city, that you are you
+O life of love, who was such a guide that far
+We too have the grief of grief that you are
+
+BLEU literal: 12.89  BLEU style: 5.4  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[4] ahmad-faraz
+SOURCE:
+ख़ामोश हो क्यूँ दाद-ए-जफ़ा क्यूँ नहीं देते
+बिस्मिल हो तो क़ातिल को दुआ क्यूँ नहीं देते
+वहशत का सबब रौज़न-ए-ज़िंदाँ तो नहीं है
+मेहर ओ मह ओ अंजुम को बुझा क्यूँ नहीं देते
+इक ये भी तो अंदाज़-ए-इलाज-ए-ग़म-ए-जाँ है
+ऐ चारागरो दर्द बढ़ा क्यूँ नहीं देते
+मुंसिफ़ हो अगर तुम तो कब इंसाफ़ करोगे
+मुजरिम हैं अगर हम तो सज़ा क्यूँ नहीं देते
+रहज़न हो तो हाज़िर है मता-ए-दिल-ओ-जाँ भी
+रहबर हो तो मंज़िल का पता क्यूँ नहीं देते
+क्या बीत गई अब के 'फ़राज़' अहल-ए-चमन पर
+यारान-ए-क़फ़स मुझ को सदा क्यूँ नहीं देते
+
+REF LITERAL:
+Why are you silent? Why don't you praise me?
+If you have Bismil then why don't you pray to the murderer?
+Rozan-e-Zinda is not the reason for this cruelty.
+Why don't you extinguish Meher O Mah O Anjum?
+This is also a style-e-treatment-e-sorrow-e-jaan
+O foragers, why don't you increase the pain?
+If you are a judge then when will you do justice?
+If they are criminals then why don't we punish them?
+If there is a desire, then the Mother of the Heart is also present.
+If you are a friend then why don't you give the address of your destination?
+What has happened to the present 'Faraaz' Ahl-e-Chaman?
+Why don't you always give me friends?
+
+REF STYLE:
+Why are you silent, why don't you cry out against cruelty's sway
+If slaughtered, why don't you bless the killer anyway
+The prison window is not the cause of this wild dismay
+Why don't you extinguish the sun, moon and stars' display
+This too is a method to cure the heart's grief, I'd say
+O healer, why don't you increase the pain and make it stay
+If you are the judge, then when will justice hold its day
+If we are the guilty ones, why don't you punish without delay
+If you're a bandit, here's my heart and soul as prey
+If you're a guide, why don't you show the destination's way
+What has befallen the garden dwellers, come what may
+Why don't my cage-companions call to me today
+
+HYPOTHESIS:
+Be silent, O beloved of love, you don't give
+If there's reason, the killer doesn't pray to me
+Fear's reason is not to blame for the loss of love's way
+You don't give me the lamp of love's lamp
+This too is the thought of love's way
+O JGHO, pain's pain doesn't raise
+If you are fair, when will you judge?
+If we're criminals, we don't give the punishment
+If there's weight, the heart's heart and heart are at rest
+If there's hope, then the destination's address won't be known
+What has passed, 'Naj', upon the people of heaven's garden
+Love's love doesn't always make me a lover
+
+BLEU literal: 4.31  BLEU style: 3.86  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[5] ahmad-faraz
+SOURCE:
+क़ुर्बतों में भी जुदाई के ज़माने माँगे
+दिल वो बे-मेहर कि रोने के बहाने माँगे
+हम न होते तो किसी और के चर्चे होते
+ख़िल्क़त-ए-शहर तो कहने को फ़साने माँगे
+यही दिल था कि तरसता था मरासिम के लिए
+अब यही तर्क-ए-तअल्लुक़ के बहाने माँगे
+अपना ये हाल कि जी हार चुके लुट भी चुके
+और मोहब्बत वही अंदाज़ पुराने माँगे
+ज़िंदगी हम तिरे दाग़ों से रहे शर्मिंदा
+और तू है कि सदा आईना-ख़ाने माँगे
+दिल किसी हाल पे क़ाने ही नहीं जान-ए-'फ़राज़'
+मिल गए तुम भी तो क्या और न जाने माँगे
+
+REF LITERAL:
+There is a need for separation even in closeness
+The heart asks for mercy under the pretext of crying.
+If we had not been there, it would have been someone else's discussion.
+The creation of the city requires a lot of words.
+It was my heart that yearned for Marasima.
+Now ask for this in the name of logic and connection
+I am in such a state that I have lost my soul and have been robbed.
+And love demands the same old style
+Life we ​​are ashamed of our scars
+And you are the one who always asks for a mirror.
+Heart never listens to any situation Jaan-e-'Faraaz'
+I found you too and I don't know what else I asked for.
+
+REF STYLE:
+Even in closeness, the heart seeks epochs of separation's pain
+So merciless, it asks for reasons just to cry again
+Had we not been, someone else would have tales to tell
+The city's populace would still seek stories to entertain
+This was the heart that once yearned for love's sweet refrain
+Now this same heart seeks excuses to break the chain
+Such is our state: defeated, plundered, lost in vain
+Yet love still demands the same old ways remain
+Life, we stayed ashamed because of all your stain
+And you keep asking for mirror-chambers to sustain
+The heart is never satisfied with any state, O Faraz, my bane
+Even if we found you, what then—it would seek the unknown again
+
+HYPOTHESIS:
+Even in your dreams, ask for the days of separation
+The heart that is free from the burden of weeping's plea
+If we hadn't been anyone's church, we would have been
+When you follow the path of love, you seek to say
+This heart was that it was for the sake of my heart's desire
+Now seek this logic's excuse of love's way
+I've lost my heart, I'd lost, I still lost
+And love seeks the same way, old age
+Life we've been ashamed of the brands we'd see
+And you're the one who seeks always the mirror's mirror
+The heart doesn't bear any pain, O beloved's beloved
+If you've met, what else you don't ask for
+
+BLEU literal: 4.23  BLEU style: 2.17  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[6] ahmad-faraz
+SOURCE:
+साक़िया एक नज़र जाम से पहले पहले
+हम को जाना है कहीं शाम से पहले पहले
+नौ-गिरफ़्तार-ए-वफ़ा सई-ए-रिहाई है अबस
+हम भी उलझे थे बहुत दाम से पहले पहले
+ख़ुश हो ऐ दिल कि मोहब्बत तो निभा दी तू ने
+लोग उजड़ जाते हैं अंजाम से पहले पहले
+अब तिरे ज़िक्र पे हम बात बदल देते हैं
+कितनी रग़बत थी तिरे नाम से पहले पहले
+सामने उम्र पड़ी है शब-ए-तन्हाई की
+वो मुझे छोड़ गया शाम से पहले पहले
+कितना अच्छा था कि हम भी जिया करते थे 'फ़राज़'
+ग़ैर-मारूफ़ से गुमनाम से पहले पहले
+
+REF LITERAL:
+Sakiya a look before the jam first
+we have to go somewhere before evening
+The nine arrested for loyalty have now been released.
+We too were entangled a long time ago
+Be happy O heart, you have fulfilled my love
+people get destroyed before the end
+Now at your mention we will change the topic.
+How much love was there before your name?
+An age of loneliness lies ahead
+He left me the evening before
+How good it was that we too used to live 'Faraz'
+From unknown to anonymous before first
+
+REF STYLE:
+O cupbearer, one glance before the wine, before the wine
+I must depart somewhere before the evening, before the evening
+Newly caught in love's snare, efforts to break free are in vain
+I too was tangled deep in the net, before the net, before the net
+Rejoice O heart, for you kept faith in love till the end
+People are destroyed before the outcome, before the outcome
+Now at your mention I change the subject entirely
+How much longing there was for your name, before your name, before your name
+Before me lies the age of solitary nights
+He left me alone before the evening, before the evening
+How beautiful it was when we too used to live, O Faraz
+From unknown to nameless, before nameless, before nameless
+
+HYPOTHESIS:
+A glance before a drink's flow
+We have to go somewhere before evening before
+One hundred thousand feet of loyalty's sway is now
+We too were engaged before a lot of price before
+Be glad, O heart, for love you brought forth
+People are destroyed before the end comes
+Now at the mention we change the matter's way
+What longings were before your name's name was
+Life has passed before me in the night of dawn's sway
+He left me before evening
+How good it was that we too lived, 'Naaz'
+Before eternity, before ignorance
+
+BLEU literal: 19.84  BLEU style: 7.87  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[7] ahmad-faraz
+SOURCE:
+वहशतें बढ़ती गईं हिज्र के आज़ार के साथ
+अब तो हम बात भी करते नहीं ग़म-ख़्वार के साथ
+हम ने इक उम्र बसर की है ग़म-ए-यार के साथ
+'मीर' दो दिन न जिए हिज्र के आज़ार के साथ
+अब तो हम घर से निकलते हैं तो रख देते हैं
+ताक़ पर इज़्ज़त-ए-सादात भी दस्तार के साथ
+इस क़दर ख़ौफ़ है अब शहर की गलियों में कि लोग
+चाप सुनते हैं तो लग जाते हैं दीवार के साथ
+एक तो ख़्वाब लिए फिरते हो गलियों गलियों
+उस पे तकरार भी करते हो ख़रीदार के साथ
+शहर का शहर ही नासेह हो तो क्या कीजिएगा
+वर्ना हम रिंद तो भिड़ जाते हैं दो-चार के साथ
+हम को उस शहर में ता'मीर का सौदा है जहाँ
+लोग मे'मार को चुन देते हैं दीवार के साथ
+जो शरफ़ हम को मिला कूचा-ए-जानाँ से 'फ़राज़'
+सू-ए-मक़्तल भी गए हैं उसी पिंदार के साथ
+
+REF LITERAL:
+The atrocities increased with the arrival of Hijr.
+Now we don't even talk with sadness
+We have lived a lifetime with grief-e-yaar
+'Mir' did not live for two days with Aazar of Hijr
+Now when we leave the house we keep it
+Izzat-e-Sadaat is also on the lookout along with Dastar
+There is so much fear now in the streets of the city that people
+When you hear the sound, you lean against the wall.
+You roam the streets with a dream
+You even argue with the buyer over that.
+What will you do if the city itself is a disaster?
+Otherwise we end up fighting with two-fours.
+We have a construction deal in a city where
+People choose the tomb along the wall
+The honor that we got from Kucha-e-Jaanaan 'Faraz'
+Su-e-Maqtal has also gone with the same Pindar
+
+REF STYLE:
+Anguish grew and multiplied with separation's despair
+Now I don't even speak with those who'd my sorrows share
+I've spent a lifetime bearing the beloved's grief and care
+Mir lived not two days with separation's despair
+Now when I leave my home, I set aside with care
+On the shelf my honored turban, dignity laid bare
+Such is the fear now in the city's lanes everywhere
+Hearing footsteps, people press themselves against walls there
+First you wander lane to lane with dreams beyond compare
+Then you haggle and you quarrel with each buyer there
+If the whole city turns preacher, what can one declare?
+Otherwise we libertines will clash with two or four there
+I desire to build in that city where with care
+People bury the mason with the wall he'd repair
+The honor that I gained from the beloved's street, Faraz
+With that same pride I've walked toward death's affair
+
+HYPOTHESIS:
+The waves grew and grew, along with the flights of the caravan
+Now we don't speak, but with sorrow and sorrow
+We've lived a lifetime with sorrow's beloved
+'Mir', don't stay with the arrows of the mirror's door
+Now we leave home, we keep it in mind
+On the side even honor's display, with the gatheringer
+This is the fear that people in the streets of the city now
+When they hear the bow, they begin to appear with the wall
+For one dream, you walk the streets of the streets
+You even quarrel on it with the buyer's buyer
+If the city's city is not a city, what can we do to maintain it
+If we turn to love, then we go with two of my friends
+We have in that city the trade of the beloved's garden
+People choose to kill, with the wall
+Those shame that we met from the beloved's display, 'Naaz'
+The wine of love has gone along with the same roseer's display
+
+BLEU literal: 9.67  BLEU style: 4.25  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[8] akbar-allahabadi
+SOURCE:
+दिल-ए-मायूस में वो शोरिशें बरपा नहीं होतीं
+उमीदें इस क़दर टूटीं कि अब पैदा नहीं होतीं
+मिरी बेताबियाँ भी जुज़्व हैं इक मेरी हस्ती की
+ये ज़ाहिर है कि मौजें ख़ारिज अज़ दरिया नहीं होतीं
+वही परियाँ हैं अब भी राजा इन्दर के अखाड़े में
+मगर शहज़ादा-ए-गुलफ़ाम पर शैदा नहीं होतीं
+यहाँ की औरतों को इल्म की पर्वा नहीं बे-शक
+मगर ये शौहरों से अपने बे-परवा नहीं होतीं
+तअ'ल्लुक़ दिल का क्या बाक़ी मैं रक्खूँ बज़्म-ए-दुनिया से
+वो दिलकश सूरतें अब अंजुमन-आरा नहीं होतीं
+हुआ हूँ इस क़दर अफ़्सुर्दा रंग-ए-बाग़-ए-हस्ती से
+हवाएँ फ़स्ल-ए-गुल की भी नशात-अफ़्ज़ा नहीं होतीं
+क़ज़ा के सामने बे-कार होते हैं हवास 'अकबर'
+खुली होती हैं गो आँखें मगर बीना नहीं होतीं
+
+REF LITERAL:
+Those noises do not wreak havoc in a heart of despair.
+Hopes are so broken that they are no longer born.
+My desires are also a part of my personality.
+It is clear that pleasures are not lost in the ocean.
+The same fairies are still there in the arena of King Indra.
+But there is no shame on Shehzada-e-Gulfam.
+The women here do not care about knowledge, no doubt
+But they are not indifferent to their husbands.
+What is the rest of my heart that I should keep from the world?
+Those charming faces are no longer Anjuman-ara
+I have become such an absurd person,
+Winds do not destroy even the crops of flowers.
+Havas 'Akbar' becomes helpless in front of Qaza
+Cow's eyes are open but not without
+
+REF STYLE:
+In a heart that's lost all hope, no tumults can arise
+My hopes have shattered so, they can no longer materialize
+My restlessness itself is but a fragment of my being's whole
+It's clear that waves can never exist apart from ocean's roll
+The same fair maidens grace the court of Indra's royal ground
+But for the rose-cheeked prince no more are they spellbound
+The women here care not for knowledge, this is true
+Yet from their husbands' care they never do eschew
+What bond should my heart keep with this world's gathering anymore
+Those captivating faces no longer grace the assembly floor
+So weary have I grown of life's garden and its hue
+Even spring's gentle breezes bring no joy anew
+Before fate's decree, Akbar, all senses lose their might
+Though eyes remain wide open, they possess no sight
+
+HYPOTHESIS:
+In the heart of the heart, those lightnings do not rise
+Why should children be broken, that they are no longer born
+My longings too are for one of my beings
+It is evident that the waves do not become the ocean's flow
+The same are they still in the spectacles of the king's display
+But upon the garden of separation there is no shame
+The women here are not ignorant of knowledge's meaning
+But these husbands do not seek their own company's way
+What rest of the heart, what rest, from the blood of the world
+Those hearts no longer remain in love's domain
+I've come to know this longing from the color of the garden's garden
+Not even the winds of the rose's rose are filled with wine
+In front of love's lips, 'Akbar'
+The feet are open, but the eyes do not appear
+
+BLEU literal: 10.09  BLEU style: 2.52  Syllable alignment: 0.0
+----------------------------------------------------------------------
+
+[9] akbar-allahabadi
+SOURCE:
+दुनिया में हूँ दुनिया का तलबगार नहीं हूँ
+बाज़ार से गुज़रा हूँ ख़रीदार नहीं हूँ
+ज़िंदा हूँ मगर ज़ीस्त की लज़्ज़त नहीं बाक़ी
+हर-चंद कि हूँ होश में हुश्यार नहीं हूँ
+इस ख़ाना-ए-हस्ती से गुज़र जाऊँगा बे-लौस
+साया हूँ फ़क़त नक़्श-ब-दीवार नहीं हूँ
+अफ़्सुर्दा हूँ इबरत से दवा की नहीं हाजत
+ग़म का मुझे ये ज़ोफ़ है बीमार नहीं हूँ
+वो गुल हूँ ख़िज़ाँ ने जिसे बर्बाद किया है
+उलझूँ किसी दामन से मैं वो ख़ार नहीं हूँ
+या रब मुझे महफ़ूज़ रख उस बुत के सितम से
+मैं उस की इनायत का तलबगार नहीं हूँ
+गो दावा-ए-तक़्वा नहीं दरगाह-ए-ख़ुदा में
+बुत जिस से हों ख़ुश ऐसा गुनहगार नहीं हूँ
+अफ़्सुर्दगी ओ ज़ोफ़ की कुछ हद नहीं 'अकबर'
+काफ़िर के मुक़ाबिल में भी दीं-दार नहीं हूँ
+
+REF LITERAL:
+I am in the world, I am not dependent on the world.
+I have passed through the market, I am not a buyer.
+I am alive but I have no dignity left.
+I am not smart in every way.
+I will pass through this house of celebrities helpless.
+I am a shadow, I am not just a map, I am not a wall.
+I am ridiculous, there is no need for medicine from the letter.
+I have this pain of sadness, I am not sick.
+I am that flower which has been ruined by the treasure.
+I am not ready to get entangled with anyone.
+O Lord, please protect me from the torture of that idol.
+I am not a seeker of his kindness
+There is no claim of piety in Dargah-e-Khuda.
+I am not a criminal whose idol pleases me.
+There is no limit to the absurdity of Akbar.
+I am not a poor person even compared to an infidel.
+
+REF STYLE:
+I am in this world but not a seeker of the world's affair
+I have passed through the bazaar but I am not a buyer there
+I am alive yet life's sweetness no longer lingers anywhere
+Though conscious still, I am not truly aware
+From this house of existence I shall pass without a care
+I am but a shadow, not a portrait fixed upon the wall's square
+I am dejected, need no cure from counsel's wear
+This weakness is my sorrow's mark, I am not one laid bare
+I am that flower which autumn has left in despair
+I won't cling to any hem, I am not a thorn to ensnare
+O Lord, protect me from that idol's cruel snare
+I seek not the favor of that beauty fair
+Though I claim no piety at God's threshold of prayer
+I'm not such a sinner that idols would declare me their heir
+My dejection and weakness know no measure, 'Akbar', I swear
+Against the infidel I cannot claim to be devout or prayer
+
+HYPOTHESIS:
+In the world I am not seeking the world's state
+I have passed through the market, I am not a buyer
+I am still alive, yet there's no rest to be
+That I am in every consciousness, I am not a lover
+From this world's world I'll pass without fear
+I'm not a shadow of the straw's wall
+I'm not in need of medicine with a sign
+I'm not sick of grief's grief
+I'm those who have ruined the beloved's voice
+I'm not that one with a garment, I'll be it
+Or, O Lord, keep me safe from the cruelty of that idol
+I am not asking for her grace's grace
+The path of separation is not in the state of love's display
+From which idols may be, I'm not such a criminal to bear
+Assurance is no limit to life, 'Akbar'
+I am not even in opposition to unbelievers, yet I am no more
+
+BLEU literal: 17.15  BLEU style: 13.88  Syllable alignment: 0.0
+----------------------------------------------------------------------
+

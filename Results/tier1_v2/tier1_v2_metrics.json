@@ -1,0 +1,8 @@
+{
+  "model": "Tier1_RuleBased_v2",
+  "num_poems": 100,
+  "avg_bleu_vs_literal": 0.94,
+  "avg_bleu_vs_style": 0.77,
+  "avg_tgt_rhyme_density": 0.55,
+  "avg_dict_coverage": 0.52
+}

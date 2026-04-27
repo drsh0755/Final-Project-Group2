@@ -1,0 +1,888 @@
+======================================================================
+TIER 3 v2 — OPUS-MT IMPROVED — REPORT
+======================================================================
+
+model: Tier3_OpusMT_v2_Improved
+base_model: Helsinki-NLP/opus-mt-hi-en
+version: v2
+num_poems: 100
+best_phase2_bleu: 25.1
+avg_bleu_vs_literal: 9.01
+avg_bleu_vs_style: 6.58
+avg_src_rhyme_density: 0.627
+avg_tgt_rhyme_density: 0.338
+avg_syllable_alignment: 0.507
+improvements: {'skip_phase1': True, 'lr': 5e-06, 'weight_decay': 0.05, 'batch_size': 16, 'no_repeat_ngram_size': 2, 'rhyme_booster': True, 'patience': 5}
+
+----------------------------------------------------------------------
+
+[0] ahmad-faraz
+SOURCE:
+अब क्या सोचें क्या हालात थे किस कारन ये ज़हर पिया है
+हम ने उस के शहर को छोड़ा और आँखों को मूँद लिया है
+अपना ये शेवा तो नहीं था अपने ग़म औरों को सौंपें
+ख़ुद तो जागते या सोते हैं उस को क्यूँ बे-ख़्वाब किया है
+ख़िल्क़त के आवाज़े भी थे बंद उस के दरवाज़े भी थे
+फिर भी उस कूचे से गुज़रे फिर भी उस का नाम लिया है
+हिज्र की रुत जाँ-लेवा थी पर ग़लत सभी अंदाज़े निकले
+ताज़ा रिफ़ाक़त के मौसम तक मैं भी जिया हूँ वो भी जिया है
+एक 'फ़राज़' तुम्हीं तन्हा हो जो अब तक दुख के रसिया हो
+वर्ना अक्सर दिल वालों ने दर्द का रस्ता छोड़ दिया है
+
+REF LITERAL:
+Now what should we think, what were the circumstances, why did we drink this poison?
+We have abandoned his city and closed our eyes
+This was not my service; hand over your sorrows to others.
+You yourself are either awake or asleep, why have you made him dreamless?
+The sounds of creation were also closed, its doors were also closed.
+Even though I passed through that path, I still took his name.
+The process of Hijr was life-threatening but all guesses turned out to be wrong.
+I too have lived till the season of fresh friendship, he too has lived.
+You are the only one 'Faraaz' who is still full of sorrow.
+Otherwise, people of heart have often left the path of pain.
+
+REF STYLE:
+What use to ponder now what state it was, what reason made me drink this poison deep
+I left behind the city where she dwells and closed my eyes in endless sleep
+This was never my nature's way to burden others with my grief and pain
+I myself stay wakeful through the night, why have I robbed her of her dreams again
+Creation's voices all were hushed, and shut were all the doors to her domain
+Yet still I passed through that same lane, yet still I took her name in vain
+The season of separation was deadly but all predictions proved untrue
+Through fresh seasons of companionship I lived and she has lived on too
+O 'Faraz' you alone remain the one still devoted to sorrow's art
+For most who claimed to be lovers have long abandoned the path of the aching heart
+
+HYPOTHESIS (with rhyme boost):
+What state did you think now, whose poison this poison is drunk
+We have abandoned her city and have blinded my eyes
+It wasn't my own self, but deliver my sorrows to others
+Whether they wake themselves or sleep, it's made him drunk
+There were voices of separation, her doors were closed too
+Yet we have passed that journey, yet we've made her name eyes
+The separation's glance was but the wrong measure came to pass
+Until the spring of folly, I too am living, that same same one is alive
+A 'Naaz', you're just alone, who remains in pain's domain
+God has often abandoned the path to pain's path
+
+HYPOTHESIS (without boost):
+What state did you think now, whose poison this poison is drunk
+We have abandoned her city and have blinded my eyes
+It wasn't my own self, but deliver my sorrows to others
+Whether they wake themselves or sleep, it's made him drunk
+There were voices of separation, her doors were closed too
+Yet we have passed that journey, yet we've made her name known
+The separation's glance was but the wrong measure came to pass
+Until the spring of folly, I too am living, that same same one is alive
+A 'Naaz', you're just alone, who remains in pain's domain
+God has often abandoned the path to pain's path
+
+BLEU literal: 3.54  BLEU style: 2.59  Rhyme: 0.4  Syllable: 0.478
+----------------------------------------------------------------------
+
+[1] ahmad-faraz
+SOURCE:
+ऐसे चुप हैं कि ये मंज़िल भी कड़ी हो जैसे
+तेरा मिलना भी जुदाई की घड़ी हो जैसे
+अपने ही साए से हर गाम लरज़ जाता हूँ
+रास्ते में कोई दीवार खड़ी हो जैसे
+कितने नादाँ हैं तिरे भूलने वाले कि तुझे
+याद करने के लिए उम्र पड़ी हो जैसे
+तेरे माथे की शिकन पहले भी देखी थी मगर
+ये गिरह अब के मिरे दिल में पड़ी हो जैसे
+मंज़िलें दूर भी हैं मंज़िलें नज़दीक भी हैं
+अपने ही पाँव में ज़ंजीर पड़ी हो जैसे
+आज दिल खोल के रोए हैं तो यूँ ख़ुश हैं 'फ़राज़'
+चंद लम्हों की ये राहत भी बड़ी हो जैसे
+
+REF LITERAL:
+They are as silent as if this floor is also hard.
+Even meeting you is like a moment of separation.
+I tremble every step of the way from my own shadow.
+As if there is a wall standing in the way
+How foolish are you to forget you?
+As if it takes ages to remember
+I had seen the wrinkles on your forehead before but
+As if this fall is lying in my heart now.
+Destinations are far and destinations are near too
+As if you have a chain on your own feet.
+Today Faraz is happy as he has cried his heart out.
+Even this relief of a few moments should be great.
+
+REF STYLE:
+We are so silent that this destination feels heavy to bear
+As if meeting you too were a moment of despair
+I tremble at my own shadow with every step I take
+As if a wall stands blocking the pathway there
+How foolish are those who would forget you, as though
+A lifetime were needed to remember and care
+I'd seen the furrow on your brow before, but now
+This knot has lodged itself within my heart somewhere
+Destinations are distant, destinations are near
+As if chains were fastened to my own feet there
+Today we wept with open heart and felt such joy, 'Faraz'
+As if this brief relief were something great and rare
+
+HYPOTHESIS (with rhyme boost):
+We're silent as if this destination too close
+Let your meeting be as a separation's hour
+From my own shadow I tremble in fear
+On the way, there's a wall, as if it'd rise
+How many are you, my dear one, that you should forget
+I've grown old to remember, as if I were
+Before your forehead was torn, yet I had seen
+This fall upon my heart now, as if it had fallen in my own eyes
+The directions too far are near at eyes
+In our own feet, we've fallen chains as if in chains
+Today the heart weeps, so happy are 'Faraz'
+This relief of a few moments should be great, as it were
+
+HYPOTHESIS (without boost):
+We're silent as if this destination too close
+Let your meeting be as a separation's hour
+From my own shadow I tremble in fear
+On the way, there's a wall, as if it'd rise
+How many are you, my dear one, that you should forget
+I've grown old to remember, as if I were
+Before your forehead was torn, yet I had seen
+This fall upon my heart now, as if it had fallen in my own heart
+The directions too far are near at hand
+In our own feet, we've fallen chains as if in chains
+Today the heart weeps, so happy are 'Faraz'
+This relief of a few moments should be great, as it were
+
+BLEU literal: 14.27  BLEU style: 3.48  Rhyme: 0.333  Syllable: 0.483
+----------------------------------------------------------------------
+
+[2] ahmad-faraz
+SOURCE:
+दोस्त बन कर भी नहीं साथ निभाने वाला
+वही अंदाज़ है ज़ालिम का ज़माने वाला
+अब उसे लोग समझते हैं गिरफ़्तार मिरा
+सख़्त नादिम है मुझे दाम में लाने वाला
+सुब्ह-दम छोड़ गया निकहत-ए-गुल की सूरत
+रात को ग़ुंचा-ए-दिल में सिमट आने वाला
+क्या कहें कितने मरासिम थे हमारे उस से
+वो जो इक शख़्स है मुँह फेर के जाने वाला
+तेरे होते हुए आ जाती थी सारी दुनिया
+आज तन्हा हूँ तो कोई नहीं आने वाला
+मुंतज़िर किस का हूँ टूटी हुई दहलीज़ पे मैं
+कौन आएगा यहाँ कौन है आने वाला
+क्या ख़बर थी जो मिरी जाँ में घुला है इतना
+है वही मुझ को सर-ए-दार भी लाने वाला
+मैं ने देखा है बहारों में चमन को जलते
+है कोई ख़्वाब की ताबीर बताने वाला
+तुम तकल्लुफ़ को भी इख़्लास समझते हो 'फ़राज़'
+दोस्त होता नहीं हर हाथ मिलाने वाला
+
+REF LITERAL:
+Not one to support even after being a friend
+That's the style of the cruel times.
+Now people think he has been arrested
+Naadim is strict and he will bring me a price.
+The face of Nikhat-e-Gul left me in the morning
+The one who shrinks in the heart at night
+What can I say about how much love we had for him?
+The one who turns away
+The whole world used to come because of you
+I am alone today so no one is coming
+Who am I waiting for on this broken threshold?
+Who will come here? Who will come here?
+What news was there that has spread so much in Miri Jaan?
+He is the one who will bring me head and head.
+I have seen the fire burning in the spring
+Is there anyone who can interpret dreams?
+You consider even sorrow as love 'Faraz'
+Not everyone who shakes hands is a friend.
+
+REF STYLE:
+Even as a friend, not one to stand by me through it all
+The same cruel ways of the world, that's the tyrant's protocol
+Now people think that he's the one captured in my thrall
+But he deeply regrets being the one to trap me in his call
+At dawn it left, like the fragrance of roses in the fall
+That which at night had come to nestle in my heart's hall
+What can I say of the intimacy we shared, I recall
+That person who now turns away and leaves without a call
+When you were here, the whole world would come to call
+Today I'm alone, and no one will come at all
+On this broken threshold, for whom do I wait and stall
+Who will come here now, who is there to come at all
+How could I know that one who's dissolved in my soul
+Would be the very one to lead me to the gallows' toll
+I have seen gardens burning even in spring's full bloom
+Is there someone who can interpret this dream's gloom
+You mistake mere formality for sincerity, 'Faraz'
+Not everyone who shakes your hand becomes a friend in the maze
+
+HYPOTHESIS (with rhyme boost):
+Not even becoming a friend, your companion
+The same is the story of the cruel, cruel people of this world
+Now people consider her to be the arrest of my beloved
+The one who brings me into the price is not hard to bear
+The mirror left behind the mirror's face
+On the night of my heart's dawn, he'll come to rest
+What can I say, how many were slain by him
+The one who is a person who knows how to turn away
+The whole world would come through you
+Today I'm alone, no one will come
+Whose wait I am, upon whose broken threshold am I broken
+Who will come here, who will arrive
+What was the news that lies in my lips so secret
+He is the one who will bring me the head of my heart too
+In springs I've seen the cypress burn
+Someone is about to explain the meaning of dreams
+You too consider angels, 'Faraz', you too
+There's no friend, no one can bind hands at all
+
+HYPOTHESIS (without boost):
+Not even becoming a friend, your companion
+The same is the story of the cruel, cruel people of this world
+Now people consider her to be the arrest of my beloved
+The one who brings me into the price is not hard to bear
+The mirror left behind the mirror's face
+On the night of my heart's dawn, he'll come to rest
+What can I say, how many were slain by him
+The one who is a person who knows how to turn away
+The whole world would come through you
+Today I'm alone, no one will come
+Whose wait I am, upon whose broken threshold am I broken
+Who will come here, who will arrive
+What was the news that lies in my lips so secret
+He is the one who will bring me the head of my heart too
+In springs I've seen the cypress burn
+Someone is about to explain the meaning of dreams
+You too consider angels, 'Faraz', you too
+There's no friend, no one can bind hands at all
+
+BLEU literal: 13.25  BLEU style: 9.9  Rhyme: 0.111  Syllable: 0.486
+----------------------------------------------------------------------
+
+[3] ahmad-faraz
+SOURCE:
+दुख फ़साना नहीं कि तुझ से कहें
+दिल भी माना नहीं कि तुझ से कहें
+आज तक अपनी बेकली का सबब
+ख़ुद भी जाना नहीं कि तुझ से कहें
+बे-तरह हाल-ए-दिल है और तुझ से
+दोस्ताना नहीं कि तुझ से कहें
+एक तू हर्फ़-ए-आश्ना था मगर
+अब ज़माना नहीं कि तुझ से कहें
+क़ासिदा हम फ़क़ीर लोगों का
+इक ठिकाना नहीं कि तुझ से कहें
+ऐ ख़ुदा दर्द-ए-दिल है बख़्शिश-ए-दोस्त
+आब-ओ-दाना नहीं कि तुझ से कहें
+अब तो अपना भी उस गली में 'फ़राज़'
+आना जाना नहीं कि तुझ से कहें
+
+REF LITERAL:
+It doesn't hurt to tell you
+I don't even feel like telling you
+The reason for my stupidity till today
+I don't even know how to tell you
+My heart is in a strange state and with you
+not friendly to say the least
+You were a Harf-e-Ashna but
+now is not the time to tell you
+ode to us poor people
+there is no way to tell you
+O God, there is pain in the heart, forgiveness is a friend.
+There is no way I can tell you
+Now we also have our own 'Faraaz' in that street.
+I don't want to come and tell you
+
+REF STYLE:
+Sorrow is not a tale that I can tell to you
+My heart won't agree that I can tell to you
+Until this day the reason for my restlessness
+I myself don't know that I can tell to you
+Beyond measure is my heart's state, and with you
+There's no friendship that I can tell to you
+You alone were the word familiar, but now
+It's not the time that I can tell to you
+We humble folk have no fixed messenger
+Not one address that I can tell to you
+O God, heartache is the beloved's gift to me
+Not bread and grain that I can tell to you
+Now even my own coming and going, 'Faraz'
+To that lane has ceased that I can tell to you
+
+HYPOTHESIS (with rhyme boost):
+There is no sorrow in telling you to speak
+Even my heart won't believe that I should tell you
+To this day the cause of my madness
+I don't even know myself to tell you
+The heart is empty of heart and from you
+There's no bond to tell you
+You were one but a stranger to me
+Now it's not time to tell you that
+We are the masters of the poor and poor
+There's no place to tell you
+O God, the heart's pain is forgiveness of my deep
+Why shouldn't I tell you what to deep
+Now even myself in that street, 'Faraz'
+I don't know how to tell you
+
+HYPOTHESIS (without boost):
+There is no sorrow in telling you to speak
+Even my heart won't believe that I should tell you
+To this day the cause of my madness
+I don't even know myself to tell you
+The heart is empty of heart and from you
+There's no bond to tell you
+You were one but a stranger to me
+Now it's not time to tell you that
+We are the masters of the poor and poor
+There's no place to tell you
+O God, the heart's pain is forgiveness of my friend
+Why shouldn't I tell you what to say
+Now even myself in that street, 'Faraz'
+I don't know how to tell you
+
+BLEU literal: 18.11  BLEU style: 5.98  Rhyme: 0.571  Syllable: 0.485
+----------------------------------------------------------------------
+
+[4] ahmad-faraz
+SOURCE:
+हर कोई दिल की हथेली पे है सहरा रक्खे
+किस को सैराब करे वो किसे प्यासा रक्खे
+उम्र भर कौन निभाता है तअल्लुक़ इतना
+ऐ मिरी जान के दुश्मन तुझे अल्लाह रक्खे
+हम को अच्छा नहीं लगता कोई हमनाम तिरा
+कोई तुझ सा हो तो फिर नाम भी तुझ सा रक्खे
+दिल भी पागल है कि उस शख़्स से वाबस्ता है
+जो किसी और का होने दे न अपना रक्खे
+कम नहीं तम-ए-इबादत भी तो हिर्स-ए-ज़र से
+फ़क़्र तो वो है कि जो दीन न दुनिया रक्खे
+हँस न इतना भी फ़क़ीरों के अकेले-पन पर
+जा ख़ुदा मेरी तरह तुझ को भी तन्हा रक्खे
+ये क़नाअ'त है इताअत है कि चाहत है 'फ़राज़'
+हम तो राज़ी हैं वो जिस हाल में जैसा रक्खे
+
+REF LITERAL:
+Everyone has the support in the palm of their heart.
+Whom should he water? Whom should he keep thirsty?
+Who maintains such a relationship throughout his life?
+O enemy of my life, may Allah protect you
+We don't like someone named Tira
+If someone is like you, then his name should also be like you.
+My heart is crazy that it is related to that person.
+One who doesn't let it be someone else's but keeps it as his own.
+Tam-e-Ibadat is no less than Hirs-e-Zar.
+Pride is that which keeps neither the world nor the world.
+Don't laugh so much at the loneliness of the beggars.
+May God keep you alone like me.
+It's a belief, it's an obedience, it's a desire 'Faraaz'
+We are happy with whatever condition it keeps us in.
+
+REF STYLE:
+Everyone holds a desert in the palm of their heart
+Whom should they quench, and whom should they leave parched apart
+Who maintains a bond so deep for a lifetime's length
+O enemy of my life, may Allah keep you in strength
+I cannot bear to hear anyone share your name
+If someone resembles you, let them bear your title the same
+My heart is mad to be attached to one so strange
+Who lets them be neither another's nor keeps them in their range
+The greed for worship is no less than the lust for gold
+True poverty is to keep neither faith nor world in hold
+Don't laugh so much at the loneliness of the poor and meek
+May God, like me, keep you too solitary and weak
+Is this contentment, devotion, or desire, O Faraz
+We are content however and in whatever state He keeps us
+
+HYPOTHESIS (with rhyme boost):
+Everyone lies in the palm of the heart's hand, my blood
+Who can walk, who can bear the thirst for life's sake
+Who plays the tresses so long a lifetime
+O enemy of my life, O God, I pray you
+No one seems good to us, no one, my away
+If there's someone like you, then a name like that of you
+The heart too is mad that from that person's embrace
+Whoever lets someone else be, let not his own blood come to away
+Not too little nor too much of the beloved's height
+The world is such that one who does not know the world's way
+Don't laugh so much at the plight of the poor away
+Go, God, just like me, make you alone, I pray
+This is love's claim, 'Jafaraz'
+We are pleased with the state in which blood is as well
+
+HYPOTHESIS (without boost):
+Everyone lies in the palm of the heart's hand, my blood
+Who can walk, who can bear the thirst for life's sake
+Who plays the tresses so long a lifetime
+O enemy of my life, O God, I pray you
+No one seems good to us, no one, my friend
+If there's someone like you, then a name like that of you
+The heart too is mad that from that person's embrace
+Whoever lets someone else be, let not his own blood come to be
+Not too little nor too much of the beloved's height
+The world is such that one who does not know the world's way
+Don't laugh so much at the plight of the poor alone
+Go, God, just like me, make you alone, I pray
+This is love's claim, 'Jafaraz'
+We are pleased with the state in which blood is as well
+
+BLEU literal: 12.22  BLEU style: 12.09  Rhyme: 0.429  Syllable: 0.496
+----------------------------------------------------------------------
+
+[5] ahmad-faraz
+SOURCE:
+जुज़ तिरे कोई भी दिन रात न जाने मेरे
+तू कहाँ है मगर ऐ दोस्त पुराने मेरे
+तू भी ख़ुशबू है मगर मेरा तजस्सुस बेकार
+बर्ग-ए-आवारा की मानिंद ठिकाने मेरे
+शम्अ की लौ थी कि वो तू था मगर हिज्र की रात
+देर तक रोता रहा कोई सिरहाने मेरे
+ख़ल्क़ की बे-ख़बरी है कि मिरी रुस्वाई
+लोग मुझ को ही सुनाते हैं फ़साने मेरे
+लुट के भी ख़ुश हूँ कि अश्कों से भरा है दामन
+देख ग़ारत-गर-ए-दिल ये भी ख़ज़ाने मेरे
+आज इक और बरस बीत गया उस के बग़ैर
+जिस के होते हुए होते थे ज़माने मेरे
+काश तू भी मेरी आवाज़ कहीं सुनता हो
+फिर पुकारा है तुझे दिल की सदा ने मेरे
+काश तू भी कभी आ जाए मसीहाई को
+लोग आते हैं बहुत दिल को दुखाने मेरे
+काश औरों की तरह मैं भी कभी कह सकता
+बात सुन ली है मिरी आज ख़ुदा ने मेरे
+तू है किस हाल में ऐ ज़ूद-फ़रामोश मिरे
+मुझ को तो छीन लिया अहद-ए-वफ़ा ने मेरे
+चारागर यूँ तो बहुत हैं मगर ऐ जान-ए-'फ़राज़'
+जुज़ तिरे और कोई ज़ख़्म न जाने मेरे
+
+REF LITERAL:
+I don't know any day or night before you.
+Where are you, O my old friend?
+You are also a fragrance but my taste is useless
+My abode is like a berg-e-awara.
+It was the flame of evening that you were there but on the night of Hijra
+Someone kept crying by my bedside for a long time
+It's unknown to the people that it is a matter of shame.
+People tell my stories only to me
+I am happy even after looting that my hem is full of tears.
+Look, these treasures of my heart are also worthless.
+Today another year has passed without him
+through whom my world used to exist
+I wish you also hear my voice somewhere
+My heart has always called you again
+I wish you also come to the Messiah someday
+Many people come to hurt my heart
+I wish I could say like others someday
+Miri, God has listened to me today.
+What condition are you in, oh lonely soul?
+My promise of fidelity has been snatched away from me.
+There are many sources of pasture, but O darling of Faraz!
+You are my judge and I don't know any wound.
+
+REF STYLE:
+Without you no day or night knows me anymore
+Where are you though, O my friend of yore
+You too are fragrance, but my search is in vain
+Like wandering petals are my dwellings unsure
+Was it the candle's flame or were you there, but on separation's night
+Someone wept for long beside my bedside for sure
+Is it the world's ignorance or is it my own shame
+People narrate to me my own tales of lore
+Plundered yet happy that my lap is filled with tears
+See, O plunderer of hearts, these too are my treasure
+Today another year has passed without that one
+In whose presence existed all my eras before
+If only you too would hear my voice somewhere
+Once again my heart's call has summoned you once more
+If only you too would come sometime to heal
+Many people come only to wound my heart's core
+If only like others I too could sometime say
+My prayer has been heard today by God for sure
+What state are you in, O one who forgets so soon
+From me my covenant of faithfulness has been torn
+Healers there are many, but O life of 'Faraz'
+Except you no one else knows my wounds anymore
+
+HYPOTHESIS (with rhyme boost):
+Let no day be known by me at all
+Where are you, O friend, my old one
+You too rejoice, but my love is futile
+My dwelling place in the garden of separation's garden
+The candle's flame was that it was you, but the night of separation
+For a long time, some of my head remained weeping
+The good news of the garden is that my heart's embrace
+People speak only to me, my beloved
+I'm glad even of the plunder that the tears are filled with away
+Behold, this treasure of my heart is mine too
+Today one more years passed without her
+The ones who passed through the world were away
+Would that you too would hear my voice somewhere
+Again you pray to my heart's eternal longing
+If you too should come, let the Messiah come
+People come to my heart with great away
+Like others else, I could say at least
+God has heard my words today
+In what state are you, O Majnun, my away
+My covenant of faithfulness has snatched me away
+There are so many fortunes, but O life of separation's domain
+Let no other wound be known to me
+
+HYPOTHESIS (without boost):
+Let no day be known by me at all
+Where are you, O friend, my old one
+You too rejoice, but my love is futile
+My dwelling place in the garden of separation's garden
+The candle's flame was that it was you, but the night of separation
+For a long time, some of my head remained weeping
+The good news of the garden is that my heart's embrace
+People speak only to me, my beloved
+I'm glad even of the plunder that the tears are filled with tears
+Behold, this treasure of my heart is mine too
+Today one more years passed without her
+The ones who passed through the world were mine
+Would that you too would hear my voice somewhere
+Again you pray to my heart's eternal longing
+If you too should come, let the Messiah come
+People come to my heart with great pain
+Like others else, I could say at least
+God has heard my words today
+In what state are you, O Majnun, my friend
+My covenant of faithfulness has snatched me away
+There are so many fortunes, but O life of separation's domain
+Let no other wound be known to me
+
+BLEU literal: 8.52  BLEU style: 11.38  Rhyme: 0.318  Syllable: 0.484
+----------------------------------------------------------------------
+
+[6] ahmad-faraz
+SOURCE:
+शो'ला था जल-बुझा हूँ हवाएँ मुझे न दो
+मैं कब का जा चुका हूँ सदाएँ मुझे न दो
+जो ज़हर पी चुका हूँ तुम्हीं ने मुझे दिया
+अब तुम तो ज़िंदगी की दुआएँ मुझे न दो
+ये भी बड़ा करम है सलामत है जिस्म अभी
+ऐ ख़ुसरवान-ए-शहर क़बाएँ मुझे न दो
+ऐसा न हो कभी कि पलट कर न आ सकूँ
+हर बार दूर जा के सदाएँ मुझे न दो
+कब मुझ को ए'तिराफ़-ए-मोहब्बत न था 'फ़राज़'
+कब मैं ने ये कहा है सज़ाएँ मुझे न दो
+
+REF LITERAL:
+The flame was lit by water, I have extinguished it, don't let the winds blow on me.
+I have been gone for a long time, don't give me forever
+You gave me the poison that I have already drank.
+Now you don't give me the blessings of life
+This is also a big deed, my body is safe now.
+O Khusrawan-e-city, don't give me the kingdoms
+May it never happen that I can't come back
+Don't give me forever by going away every time
+When did I not have any love for each other, Faraz?
+When have I ever said that don't punish me?
+
+REF STYLE:
+I was a flame now extinguished, give me no winds to blow
+I departed long ago, give me no calls to follow
+The poison that I drank, it was you who made it flow
+Now do not give me blessings for life, let me go
+Even this is a mercy that my body survives the throe
+O executioners of the city, give me no robes to don below
+Let it not be that I cannot return from where I go
+Each time I journey far, give me no calls to follow
+When did I not confess my love, O Faraz, this you know
+When did I ever say, give me no punishments to undergo
+
+HYPOTHESIS (with rhyme boost):
+The show was a lamp of water, I am the breeze, do not give me
+When have I gone, don't give me always
+The poison I've been drinking has only given me
+Now do not pray to me for life's sake
+This too is great grace, yet the body is still safe
+O beloved of love, do not give me such love
+May it never be that you can't return
+Every time you go away, don't give me the rest of my life
+When did I not find the truth of love's display, 'Faraz'
+When have I said this, don't torment me
+
+HYPOTHESIS (without boost):
+The show was a lamp of water, I am the breeze, do not give me
+When have I gone, don't give me always
+The poison I've been drinking has only given me
+Now do not pray to me for life's sake
+This too is great grace, yet the body is still safe
+O beloved of love, do not give me such love
+May it never be that you can't return
+Every time you go away, don't give me the rest of my life
+When did I not find the truth of love's display, 'Faraz'
+When have I said this, don't torment me
+
+BLEU literal: 13.14  BLEU style: 7.67  Rhyme: 0.3  Syllable: 0.529
+----------------------------------------------------------------------
+
+[7] ahmad-faraz
+SOURCE:
+उस ने सुकूत-ए-शब में भी अपना पयाम रख दिया
+हिज्र की रात बाम पर माह-ए-तमाम रख दिया
+आमद-ए-दोस्त की नवेद कू-ए-वफ़ा में आम थी
+मैं ने भी इक चराग़ सा दिल सर-ए-शाम रख दिया
+शिद्दत-ए-तिश्नगी में भी ग़ैरत-ए-मय-कशी रही
+उस ने जो फेर ली नज़र मैं ने भी जाम रख दिया
+उस ने नज़र नज़र में ही ऐसे भले सुख़न कहे
+मैं ने तो उस के पाँव में सारा कलाम रख दिया
+देखो ये मेरे ख़्वाब थे देखो ये मेरे ज़ख़्म हैं
+मैं ने तो सब हिसाब-ए-जाँ बर-सर-ए-आम रख दिया
+अब के बहार ने भी कीं ऐसी शरारतें कि बस
+कब्क-ए-दरी की चाल में तेरा ख़िराम रख दिया
+जो भी मिला उसी का दिल हल्क़ा-ब-गोश-ए-यार था
+उस ने तो सारे शहर को कर के ग़ुलाम रख दिया
+और 'फ़राज़' चाहिएँ कितनी मोहब्बतें तुझे
+माओं ने तेरे नाम पर बच्चों का नाम रख दिया
+
+REF LITERAL:
+He also placed his message in Sukut-e-Shab
+On the night of Hijrah, all the blessings were placed on the balm.
+The request of Amad-e-Dost was common in Ku-e-Wafa.
+I also placed my heart like a lamp in the evening
+There was a strangeness even in the intensity of passion.
+When he looked away, I also stopped him.
+He said such nice words with a glance
+I have placed the entire Kalam at his feet.
+Look, these were my dreams, look, these are my wounds
+I have kept all the accounts in plain sight.
+This spring also did such mischief that
+I have put an end to you in the trap of the carpet.
+Whoever I met had a light heart and a good heart.
+He enslaved the entire city
+And Faraz, how much love do you need?
+Mothers named their children after you
+
+REF STYLE:
+In the silence of night itself, she left her message for me
+On the terrace of separation's night, she placed the full moon's decree
+News of the friend's arrival was common in the lane of loyalty
+I too placed my heart like a lamp at evening's entry
+Even in the intensity of thirst, remained the pride of wine's decree
+When she turned away her gaze, I too set down my cup, you see
+With glances alone she spoke such beautiful words to me
+I laid all my verses at her feet in complete humility
+Behold these were my dreams, behold these are my wounds you see
+I laid bare all accounts of my soul for all the world to see
+This spring too played such mischief that I must decree
+It placed your graceful walk in the partridge's step so free
+Whoever I met, their heart was ringed in the beloved's ear, you see
+She made the entire city into slaves and let them be
+And 'Faraz,' how many more loves do you need from me
+Mothers named their children after you, such is your legacy
+
+HYPOTHESIS (with rhyme boost):
+She placed her passion in the garden's garden too
+On the night of separation, I kept my life's sway
+The gathering of friends was common in love's devotion
+I too set my own heart like a rose's rose
+Even in the garden of separation, the beloved's gaze remained unfurled
+The wine that she turned away, I too kept my cup
+In her eyes she spoke in such a way that she knew
+I placed all the words in his feet, but I kept them all
+See these were my dreams, behold, these are my wounds
+I've kept all my accounts of the beloved's care
+The spring of this time too made such mischiefs that just
+When did you find yourself in the path of the beloved's gaze
+Whatever she found was the heart of the beloved's heart
+He gave all the city to slave for all
+And 'Faraz', how much love you must have
+In your name's name the children gave their name
+
+HYPOTHESIS (without boost):
+She placed her passion in the garden's garden too
+On the night of separation, I kept my life's sway
+The gathering of friends was common in love's devotion
+I too set my own heart like a rose's rose
+Even in the garden of separation, the beloved's gaze remained unfurled
+The wine that she turned away, I too kept my cup
+In her eyes she spoke in such a way that she knew
+I placed all the words in his feet, but I kept them all
+See these were my dreams, behold, these are my wounds
+I've kept all my accounts of the beloved's care
+The spring of this time too made such mischiefs that just
+When did you find yourself in the path of the beloved's gaze
+Whatever she found was the heart of the beloved's heart
+He gave all the city to slave for all
+And 'Faraz', how much love you must have
+In your name's name the children gave their name
+
+BLEU literal: 12.17  BLEU style: 10.02  Rhyme: 0.125  Syllable: 0.489
+----------------------------------------------------------------------
+
+[8] akbar-allahabadi
+SOURCE:
+बहुत रहा है कभी लुत्फ़-ए-यार हम पर भी
+गुज़र चुकी है ये फ़स्ल-ए-बहार हम पर भी
+उरूस-ए-दहर को आया था प्यार हम पर भी
+ये बेसवा थी किसी शब निसार हम पर भी
+बिठा चुका है ज़माना हमें भी मसनद पर
+हुआ किए हैं जवाहिर निसार हम पर भी
+अदू को भी जो बनाया है तुम ने महरम-ए-राज़
+तो फ़ख़्र क्या जो हुआ ए'तिबार हम पर भी
+ख़ता किसी की हो लेकिन खुली जो उन की ज़बाँ
+तो हो ही जाते हैं दो एक वार हम पर भी
+हम ऐसे रिंद मगर ये ज़माना है वो ग़ज़ब
+कि डाल ही दिया दुनिया का बार हम पर भी
+हमें भी आतिश-ए-उल्फ़त जला चुकी 'अकबर'
+हराम हो गई दोज़ख़ की नार हम पर भी
+
+REF LITERAL:
+There has been a lot of fun on us too
+This spring has passed on us too
+Urus-e-Dahar fell in love with us too
+Someday this bad taste was upon us also
+The world has also placed us on the throne
+Jawahar Nisar has happened on us too
+You have made Adu also your mahram-e-raaz.
+So why be proud of what happened to us too?
+It may be someone's fault but their tongue is open.
+So one or two attacks happen on us too.
+We are such idiots but this is a wonderful time.
+That the world has put its burden on us too
+'Akbar' has lit fire on us too
+The cry of hell has become barbaric on us too
+
+REF STYLE:
+There was a time when the beloved's grace fell upon us too
+That season of spring has passed over us too
+The bride of time once felt love's embrace for us too
+This courtesan once spent a night's devotion on us too
+Time has seated even us upon the throne's place
+Jewels have been scattered in offering upon us too
+When you made even the enemy a confidant of your secret heart
+What pride then that trust was placed upon us too
+The fault may be another's, but when their tongue breaks apart
+A blow or two still falls in its course upon us too
+We are such revelers, yet this age is so perverse
+That the world's burden has been placed upon us too
+The fire of love has burned us as well, O Akbar
+Now even hell's flames are forbidden to char us too
+
+HYPOTHESIS (with rhyme boost):
+Sometimes the beloved's pleasure has been much on us too
+This garden of separation has passed over us too
+Love came to us through love too
+This was the base of some night, even upon us too
+The world has settled on us too
+I've been blessed with love's grace too
+What you have made, too, is the mirror that you've made
+What wonder, then, what happened to us as well
+But let there be someone's fault, but let it be clear that they'll be sacrificed
+If it is so, let us go a blow on us too
+We're such a pleasure, but this is the age that's burning
+That the world's world has just laid down upon us, too
+We too have burned the fire of fire, 'Akbar'
+The night of hell has become forbidden to us too
+
+HYPOTHESIS (without boost):
+Sometimes the beloved's pleasure has been much on us too
+This garden of separation has passed over us too
+Love came to us through love too
+This was the base of some night, even upon us too
+The world has settled on us too
+I've been blessed with love's grace too
+What you have made, too, is the mirror that you've made
+What wonder, then, what happened to us as well
+But let there be someone's fault, but let it be clear that they'll be sacrificed
+If it is so, let us go a blow on us too
+We're such a pleasure, but this is the age that's burning
+That the world's world has just laid down upon us, too
+We too have burned the fire of fire, 'Akbar'
+The night of hell has become forbidden to us too
+
+BLEU literal: 11.21  BLEU style: 10.2  Rhyme: 0.643  Syllable: 0.528
+----------------------------------------------------------------------
+
+[9] akbar-allahabadi
+SOURCE:
+दर्द तो मौजूद है दिल में दवा हो या न हो
+बंदगी हालत से ज़ाहिर है ख़ुदा हो या न हो
+झूमती है शाख़-ए-गुल खिलते हैं ग़ुंचे दम-ब-दम
+बा-असर गुलशन में तहरीक-ए-सबा हो या न हो
+वज्द में लाते हैं मुझ को बुलबुलों के ज़मज़मे
+आप के नज़दीक बा-मअ'नी सदा हो या न हो
+कर दिया है ज़िंदगी ने बज़्म-ए-हस्ती में शरीक
+उस का कुछ मक़्सूद कोई मुद्दआ हो या न हो
+क्यूँ सिवल-सर्जन का आना रोकता है हम-नशीं
+इस में है इक बात ऑनर की शिफ़ा हो या न हो
+मौलवी साहिब न छोड़ेंगे ख़ुदा गो बख़्श दे
+घेर ही लेंगे पुलिस वाले सज़ा हो या न हो
+मिमबरी से आप पर तो वार्निश हो जाएगी
+क़ौम की हालत में कुछ इस से जिला हो या न हो
+मो'तरिज़ क्यूँ हो अगर समझे तुम्हें सय्याद दिल
+ऐसे गेसू हूँ तो शुबह दाम का हो या न हो
+
+REF LITERAL:
+Pain is present in the heart whether there is medicine or not.
+It is clear from the state of worship whether God exists or not.
+The branches are swinging, the flowers are blossoming, the flowers are blossoming.
+Whether Tehreek-e-Sabah is there in Ba-Asar Gulshan or not?
+They bring me to the world in waves of bubbles
+May Ba-Ma'ani always be near you or not
+Life has taken part in the celebration of celebrity
+whether it has any purpose or not
+Why do we stop the civil surgeon from coming?
+There is one thing in this, whether honor is healed or not.
+Maulvi Sahib will not leave, God forgive him.
+The police will surround you whether there is punishment or not.
+You will get varnish from mimbari
+There may or may not be some improvement in the condition of the community.
+Why should you be worried if you understand me, my beloved heart?
+I am like this, so whether it is good or not
+
+REF STYLE:
+The pain exists within the heart, whether there be cure or not
+Devotion shows through one's condition, whether there be God or not
+The rose branch sways, the buds bloom forth moment by moment still
+Effective in the garden is the morning breeze's thrill or not
+The nightingales' sweet melodies bring me to ecstasy's shore
+Whether in your view their song holds meaning at its core or not
+Life has made me participant in existence's grand feast
+Whether it has some purpose, some intended goal at least or not
+Why does my companion stop the civil surgeon from coming here
+In this lies a matter of honor, whether there be healing clear or not
+The maulvi sahib won't let go even if God grants pardon's grace
+The police will surely surround us, whether there be punishment's trace or not
+Through membership you'll get a polish, a veneer so bright
+Whether this brings any luster to the nation's plight or not
+Why object if they consider you a hunter of the heart
+With such tresses, there's suspicion of the snare's art or not
+
+HYPOTHESIS (with rhyme boost):
+The pain exists within my heart if there's no cure or no pain
+Whether it be God or not, from the state it's apparent
+The branches of the rose bloom and bloom
+Whether in the garden's garden or not
+They bring me in the breezes of the bubbles' pain
+Why shouldn't there be always the moment of separation near you
+Life has shared in love's domain
+If there's no age for her, be it not
+Why does the gathering of the wine-cup keep us from waiting
+There's one thing in this, if there'd be no cure or no healing
+God will not abandon the world's pride, O God, grant me forgiveness
+We'll only bring punishment to the police, be it not
+From my beloved's hand you'll become a lover of yours
+In the state of the people, let there be some life from this, be it not
+O Lord, if you should understand your heart's design
+If I'm such a doubt, be it a price or not
+
+HYPOTHESIS (without boost):
+The pain exists within my heart if there's no cure or no pain
+Whether it be God or not, from the state it's apparent
+The branches of the rose bloom and bloom
+Whether in the garden's garden or not
+They bring me in the breezes of the bubbles' light
+Why shouldn't there be always the moment of separation near you
+Life has shared in love's domain
+If there's no age for her, be it not
+Why does the gathering of the wine-cup keep us from waiting
+There's one thing in this, if there'd be no cure or no healing
+God will not abandon the world's pride, O God, grant me forgiveness
+We'll only bring punishment to the police, be it not
+From my beloved's hand you'll become a lover of yours
+In the state of the people, let there be some life from this, be it not
+O Lord, if you should understand your heart's design
+If I'm such a doubt, be it a price or not
+
+BLEU literal: 6.92  BLEU style: 6.14  Rhyme: 0.625  Syllable: 0.513
+----------------------------------------------------------------------
+

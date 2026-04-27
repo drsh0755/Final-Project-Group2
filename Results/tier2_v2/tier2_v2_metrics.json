@@ -1,0 +1,17 @@
+{
+  "model": "Tier2_Seq2Seq_v2",
+  "num_poems": 100,
+  "best_epoch": 3,
+  "best_val_loss": 6.1274,
+  "best_val_ppl": 458.25,
+  "avg_bleu_vs_literal": 2.84,
+  "avg_bleu_vs_style": 2.12,
+  "avg_tgt_rhyme_density": 0.651,
+  "train_pairs": 43673,
+  "improvements": {
+    "hidden_dim": 768,
+    "lr": 0.0005,
+    "label_smooth": 0.1,
+    "data_aug": "en_anthropic+en_mistral+en_t"
+  }
+}
