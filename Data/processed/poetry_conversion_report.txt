@@ -1,0 +1,26 @@
+============================================================
+POETRY JSON → CSV CONVERSION REPORT
+============================================================
+
+Input           : /home/ubuntu/Natural Language Processing - DATS6312/Final-Project-Group2/Data/processed/poetry_data_translated.json
+Poets           : 30
+Total poems     : 1305
+Total lines     : 20869
+
+Translation coverage:
+  en_anthropic  : 1298 poems
+  en_t          : 1305 poems
+  en_mistral    : 1305 poems
+  en_gemini     : 0 poems
+  en_grok       : 0 poems
+
+Splits:
+  Train lines   : 14591
+  Val lines     : 2898
+  Test lines    : 3380
+  Test poems    : 213
+
+Training note:
+  hi → en_anthropic  : primary training pair
+  en_t               : literal baseline for evaluation
+  en_mistral/gemini/grok: add when available

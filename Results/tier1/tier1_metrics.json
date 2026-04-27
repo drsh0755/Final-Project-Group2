@@ -1,0 +1,10 @@
+{
+  "model": "Tier1_RuleBasedBaseline",
+  "num_samples": 200,
+  "avg_bleu_vs_literal": 0.04,
+  "avg_bleu_vs_style": 0.0,
+  "avg_dict_coverage": 0.402,
+  "avg_src_rhyme_density": 0.618,
+  "avg_tgt_rhyme_density": 0.602,
+  "rhyme_preservation_rate": 0.6
+}

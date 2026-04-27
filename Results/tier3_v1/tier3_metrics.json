@@ -1,0 +1,18 @@
+{
+  "model": "Tier3_OpusMT_FineTuned",
+  "base_model": "Helsinki-NLP/opus-mt-hi-en",
+  "num_poems": 100,
+  "avg_bleu_vs_literal": 8.39,
+  "avg_bleu_vs_style": 6.1,
+  "avg_src_rhyme_density": 0.627,
+  "avg_tgt_rhyme_density": 0.257,
+  "avg_syllable_alignment": 0.0,
+  "hyperparams": {
+    "phase1_epochs": 3,
+    "phase1_lr": 5e-05,
+    "phase2_epochs": 15,
+    "phase2_lr": 2e-05,
+    "max_len": 128,
+    "p1_sample": 50000
+  }
+}

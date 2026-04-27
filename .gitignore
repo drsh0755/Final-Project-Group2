@@ -13,3 +13,13 @@ __pycache__/
 *.log
 venv/
 .env
+
+# Model weights
+*.safetensors
+Models/tier3_opusmt/phase1/
+Models/tier3_opusmt/phase2_v2/
+Models/tier3_opusmt/tier3_v1_phase2_checkpoints/
+Models/tier3_opusmt/phase_v3b_a/
+Models/tier3_opusmt/phase_v3b_b/
+Models/tier3_opusmt/phase2_v3a/
+nlp_env/

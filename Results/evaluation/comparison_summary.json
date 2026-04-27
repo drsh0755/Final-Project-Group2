@@ -1,0 +1,29 @@
+[
+  {
+    "tier": "Tier1_RuleBased",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 0.37,
+    "avg_bleu_vs_style": 0.28,
+    "avg_src_rhyme_density": 0.622,
+    "avg_tgt_rhyme_density": 0.603,
+    "avg_syllable_alignment": 0.143
+  },
+  {
+    "tier": "Tier2_Seq2Seq",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 1.59,
+    "avg_bleu_vs_style": 1.56,
+    "avg_src_rhyme_density": 0.622,
+    "avg_tgt_rhyme_density": 0.734,
+    "avg_syllable_alignment": 0.371
+  },
+  {
+    "tier": "Tier3_OpusMT",
+    "num_poems": 100,
+    "avg_bleu_vs_literal": 8.36,
+    "avg_bleu_vs_style": 6.08,
+    "avg_src_rhyme_density": 0.622,
+    "avg_tgt_rhyme_density": 0.258,
+    "avg_syllable_alignment": 0.509
+  }
+]

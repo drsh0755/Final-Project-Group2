@@ -1,0 +1,30 @@
+[
+  {
+    "poet": "ahmad-faraz",
+    "poem_filename": "aankh-se-duur-na-ho-dil-se-utar-jaaegaa-ahmad-faraz-ghazals",
+    "poem_id": "aankh-se-duur-na-ho-dil-se-utar-jaaegaa-ahmad-faraz-ghazals",
+    "hindi_original": "आँख से दूर न हो दिल से उतर जाएगा \nवक़्त का क्या है गुज़रता है गुज़र जाएगा \nइतना मानूस न हो ख़ल्वत-ए-ग़म से अपनी \nतू कभी ख़ुद को भी देखेगा तो डर जाएगा \nडूबते डूबते कश्ती को उछाला दे दूँ \nमैं नहीं कोई तो साहिल पे उतर जाएगा \nज़िंदगी तेरी अता है तो ये जाने वाला \nतेरी बख़्शिश तिरी दहलीज़ पे धर जाएगा \nज़ब्त लाज़िम है मगर दुख है क़यामत का 'फ़राज़' \nज़ालिम अब के भी न रोएगा तो मर जाएगा",
+    "generated_translation": "[TRANSLATION FAILED]",
+    "reference_translation": "aañkh se duur na ho dil se utar jā.egā \nvaqt kā kyā hai guzartā hai guzar jā.egā \nitnā mānūs na ho ḳhalvat-e-ġham se apnī \ntū kabhī ḳhud ko bhī dekhegā to Dar jā.egā \nDūbte Dūbte kashtī ko uchhālā de duuñ \nmaiñ nahīñ koī to sāhil pe utar jā.egā \nzindagī terī atā hai to ye jaane vaalā \nterī baḳhshish tirī dahlīz pe dhar jā.egā \nzabt lāzim hai magar dukh hai qayāmat kā 'farāz' \nzālim ab ke bhī na ro.egā to mar jā.egā",
+    "statistics": {
+      "hindi_words": 81,
+      "generated_words": 2,
+      "reference_words": 81,
+      "expansion_ratio": 0.024691358024691357
+    }
+  },
+  {
+    "poet": "ahmad-faraz",
+    "poem_filename": "aashiqii-men-miir-jaise-khvaab-mat-dekhaa-karo-ahmad-faraz-ghazals",
+    "poem_id": "aashiqii-men-miir-jaise-khvaab-mat-dekhaa-karo-ahmad-faraz-ghazals",
+    "hindi_original": "आशिक़ी में 'मीर' जैसे ख़्वाब मत देखा करो \nबावले हो जाओगे महताब मत देखा करो \nजस्ता जस्ता पढ़ लिया करना मज़ामीन-ए-वफ़ा \nपर किताब-ए-इश्क़ का हर बाब मत देखा करो \nइस तमाशे में उलट जाती हैं अक्सर कश्तियाँ \nडूबने वालों को ज़ेर-ए-आब मत देखा करो \nमय-कदे में क्या तकल्लुफ़ मय-कशी में क्या हिजाब \nबज़्म-ए-साक़ी में अदब आदाब मत देखा करो \nहम से दरवेशों के घर आओ तो यारों की तरह \nहर जगह ख़स-ख़ाना ओ बर्फ़ाब मत देखा करो \nमाँगे-ताँगे की क़बाएँ देर तक रहती नहीं \nयार लोगों के लक़ब-अलक़ाब मत देखा करो \nतिश्नगी में लब भिगो लेना भी काफ़ी है 'फ़राज़' \nजाम में सहबा है या ज़हराब मत देखा करो",
+    "generated_translation": "[TRANSLATION FAILED]",
+    "reference_translation": "āshiqī meñ 'mīr' jaise ḳhvāb mat dekhā karo \nbāvle ho jāoge mahtāb mat dekhā karo \njasta jasta paḌh liyā karnā mazāmīn-e-vafā \npar kitāb-e-ishq kā har baab mat dekhā karo \nis tamāshe meñ ulaT jaatī haiñ aksar kashtiyāñ \nDūbne vāloñ ko zer-e-āb mat dekhā karo \nmai-kade meñ kyā takalluf mai-kashī meñ kyā hijāb \nbazm-e-sāqī meñ adab ādāb mat dekhā karo \nham se durveshoñ ke ghar aao to yāroñ kī tarah \nhar jagah ḳhas-ḳhāna o barfāb mat dekhā karo \nmāñge-tāñge kī qabā.eñ der tak rahtī nahīñ \nyaar logoñ ke laqab-alqāb mat dekhā karo \ntishnagī meñ lab bhigo lenā bhī kaafī hai 'farāz' \njaam meñ sahbā hai yā zahrāb mat dekhā karo",
+    "statistics": {
+      "hindi_words": 109,
+      "generated_words": 2,
+      "reference_words": 109,
+      "expansion_ratio": 0.01834862385321101
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "model": "Tier2_Seq2Seq_LSTM_Bahdanau",
+  "num_poems": 100,
+  "best_epoch": 5,
+  "best_val_loss": 5.5023,
+  "best_val_ppl": 245.25,
+  "avg_bleu_vs_literal": 0.18,
+  "avg_bleu_vs_style": 0.15,
+  "avg_src_rhyme_density": 0.627,
+  "avg_tgt_rhyme_density": 0.734,
+  "hyperparams": {
+    "embed_dim": 256,
+    "hidden_dim": 512,
+    "enc_layers": 2,
+    "dec_layers": 2,
+    "batch_size": 128,
+    "dropout": 0.3,
+    "learning_rate": 0.001
+  }
+}
