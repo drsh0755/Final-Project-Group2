@@ -259,8 +259,6 @@ Full mathematical formulations are in §1.3 of the report.
 ---
 
 
----
-
 ## References
 
 1. CFILT. `cfilt/iitb-english-hindi`. <https://huggingface.co/datasets/cfilt/iitb-english-hindi>
@@ -275,6 +273,3 @@ Full mathematical formulations are in §1.3 of the report.
 
 ---
 
-## Generative AI Acknowledgement
-
-Anthropic Claude (`claude-sonnet-4-5` via AWS Bedrock) was used to generate the `en_anthropic` style-preserving reference translations used as the primary training target, to iterate on data preparation, training, and evaluation scripts, and to draft and refine sections of the report. Mistral Large was used to generate the `en_mistral` reference translations. All architectural decisions, hyperparameter choices, debugging, and final code/text were reviewed and approved.
